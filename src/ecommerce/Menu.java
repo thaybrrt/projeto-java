@@ -77,7 +77,20 @@ public class Menu {
 				switch (pedido) {
 				
 		            case 1:
-		    
+		                valorItem = quantidade * 12.599f;
+		                break;
+		            case 2:
+		                valorItem = quantidade * 23.600f;
+		                break;
+		            case 3:
+		                valorItem = quantidade * 1.099f;
+		                break;
+		            case 4:
+		                valorItem = quantidade * 4.449f;
+		                break;
+		            case 5:
+		                valorItem = quantidade * 4.599f;
+		                break;
 		            default:
 		                System.out.println("\nOpção Inválida!");
 		                continue; 
