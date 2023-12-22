@@ -2,7 +2,6 @@ package ecommerce;
 
 import java.util.Scanner;
 import java.text.NumberFormat;
-import ecommerce.model.Produtos;
 import ecommerce.controller.MenuController;
 
 public class Menu {
