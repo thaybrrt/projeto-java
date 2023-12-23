@@ -44,9 +44,9 @@ public class MenuController implements MenuRepository {
 	public void sobreNos() {
 		
 		System.out.println("\nSOBRE NÓS: ");
-		System.out.println("\nOlá, bem-vindos a THAY ELETRÔNICOS, sua loja online de tecnologia! ");
+		System.out.println("\nOlá, bem-vindos a THAY ELETRÔNICOS ©, sua loja online de tecnologia! ");
 		System.out.println("Oferecemos produtos de última geração, uma experiência personalizada de compra e compromisso com a qualidade. ");
 		System.out.println("Conecte-se à nossa comunidade tecnológica e descubra inovações líderes do setor.  ");
-		System.out.println("Escolha THAY ELETRÔNICOS para uma jornada única no universo da tecnologia! ");
+		System.out.println("Escolha THAY ELETRÔNICOS © para uma jornada única no universo da tecnologia! ");
 	}
 }

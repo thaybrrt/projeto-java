@@ -1,6 +1,9 @@
 package ecommerce;
 
 import java.util.Scanner;
+
+import ecommerce.util.Cores;
+
 import java.text.NumberFormat;
 import ecommerce.controller.MenuController;
 
@@ -16,29 +19,38 @@ public class Menu {
 		int pedido = 0, quantidade;
 		float preco = 0;
 		
-		//a condição é true para que o loop seja infinito; será finalizado apenas se a opção 9 for digitada
 		while (true) {
 		
 			//parte visual do Menu
-			System.out.println("\n_______________________________________");
-			System.out.println("\n\n            THAY ELETRÔNICOS            ");
-			System.out.println("\n_______________________________________");
-			System.out.println("\n           1.PRODUTOS DISPONÍVEIS       ");
-			System.out.println("\n           2.ADICIONAR AO CARRINHO     ");
-			System.out.println("\n           3.SOBRE NÓS             ");
-			System.out.println("\n           4.FINALIZAR COMPRA           ");
-			System.out.println("\n_______________________________________");
-			System.out.println("\nDigite a opção desejada:         ");
-			System.out.println("\n                                 ");
+			System.out.println(Cores.TEXT_RED + Cores.ANSI_BLACK_BACKGROUND
+					+ "\n 🎧💻📱🎧💻📱🎧💻📱🎧💻📱🎧💻📱🎧💻📱🎧💻📱🎧💻📱🎧💻");
+			System.out.println("                                                     ");
+			System.out.println("                 THAY ELETRÔNICOS  ©                 ");
+			System.out.println("                                                     ");
+			System.out.println("_____________________________________________________");
+			System.out.println("                                                     ");
+			System.out.println("      ♦     1.PRODUTOS DISPONÍVEIS                   ");
+			System.out.println("      ♦     2.ADICIONAR AO CARRINHO                  ");
+			System.out.println("      ♦     3.SOBRE NÓS                              ");
+			System.out.println("      ♦     4.FINALIZAR COMPRA                       ");
+			System.out.println("                                                     ");
+			System.out.println("_____________________________________________________");
+			System.out.println("                                                     ");
+			System.out.println("Digite uma opção:                                    ");
+			System.out.println("                                                     ");
 			
 			opcao = leia.nextInt();
 			
-			//se a opção digitada for diferente de 4 (sair):
 			if (opcao == 4) {
-				System.out.println("\nVolte Sempre!");
-			//objeto será finalizado
+				System.out.println("\nObrigado por comprar com a THAY ELETRÔNICOS, volte Sempre!");
+				{
+					System.out.println("\n_______________________________________________________");
+					System.out.println("Projeto Desenvolvido por:                              ");
+					System.out.println("Thayná Vieira Barreto - thaybarreto@live.com           ");
+					System.out.println("github.com/thaybrrt                                    ");
+					System.out.println("_______________________________________________________");
+				   }
 				leia.close();
-			//programa será finalizado
 				System.exit(0);
 			}
 			
@@ -111,7 +123,6 @@ public class Menu {
 				System.out.println("\nOpção Inválida!");
 				break;
 	}
-
 }
 }
 }
